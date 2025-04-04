@@ -27,13 +27,30 @@
 
 # Stack
 
-- **Definition:** Array follows the stack approach, which is LIFO method.
+- **Definition:** Array follows the stack approach, which is LIFO method (Last In First Out).
+
+## Uses
+
+- Undo/Redo functionality[StackOVerflow](https://stackoverflow.com/a/54416376)[Problem link](https://github.com/hakeemsalman/javascript-practice-questions/blob/main/README.md#undoredo-functionality)
+- Navigation / Routing
+- Matching Brackets[Problem Link](https://github.com/hakeemsalman/javascript-practice-questions/blob/main/README.md#matching-brackets)
 
 1. **push**: Add value at the top of the stack
 1. **pop**: Delete value from the top of the stack and return it.
 1. **size**: Get length of the stack
 1. **peek**: Get top value from the stack.
 
+<table>
+  <tr>
+    <th>
+    ES5 functional based code    
+  </th>
+  <th>
+    ES6 Modern Class based code(Preferred)
+  </th>
+  </tr>
+  <tr>
+    <td>
 
 ```js
 let Stack = function (){
@@ -73,6 +90,46 @@ console.log(myStack.size());
 console.log(myStack.pop());
 console.log(myStack.peek());
 ```
+      
+  </td>
+    
+  <td>
+
+```js
+class Stack {
+  constructor() {
+    this.storage = {};
+    this.count = 0;
+  }
+
+  push(value) {
+    this.storage[this.count++] = value;
+  }
+
+  pop() {
+    if (this.count === 0) return undefined;
+    const result = this.storage[--this.count];
+    delete this.storage[this.count];
+    return result;
+  }
+
+  size() {
+    return this.count;
+  }
+
+  peek() {
+    return this.storage[this.count - 1];
+  }
+}
+
+const myStack = new Stack();
+```
+    
+  </td>
+    
+  </tr>
+</table>
+
 
 # Sets
 
