@@ -31,9 +31,10 @@
 
 ## Uses
 
-- Undo/Redo functionality[StackOVerflow](https://stackoverflow.com/a/54416376)[Problem link](https://github.com/hakeemsalman/javascript-practice-questions/blob/main/README.md#undoredo-functionality)
+- Undo/Redo functionality - [StackOVerflow](https://stackoverflow.com/a/54416376) - [Problem link](https://github.com/hakeemsalman/javascript-practice-questions/blob/main/README.md#undoredo-functionality)
 - Navigation / Routing
-- Matching Brackets[Problem Link](https://github.com/hakeemsalman/javascript-practice-questions/blob/main/README.md#matching-brackets)
+- Matching Brackets - [Problem Link](https://github.com/hakeemsalman/javascript-practice-questions/blob/main/README.md#matching-brackets)
+- Min Stack - [Problem Link](https://github.com/hakeemsalman/javascript-practice-questions/edit/main/README.md#min-stack)
 
 1. **push**: Add value at the top of the stack
 1. **pop**: Delete value from the top of the stack and return it.
